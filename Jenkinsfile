@@ -13,10 +13,7 @@ pipeline {
                     echo "Installation des dependances..."
                     sudo apt update
                     sudo apt install -y python3 python3-pip
-                    pip3 install requests
-                    pip3 install beautifulsoup4
-                    pip3 install lxml
-                    pip3 install pandas
+                    sudo apt install -y python3-requests python3-bs4 python3-lxml python3-pandas
                 '''				
             }
         }
