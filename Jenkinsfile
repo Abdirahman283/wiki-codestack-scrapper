@@ -11,8 +11,8 @@ pipeline {
                 echo "Nom du projet : ${env.NOM_PROJET}"
                 sh '''
                     echo "Installation des dependances..."
-                    echo eleve | sudo -S apt update
-                    echo eleve | sudo -S apt install -y python3 python3-pip
+                    sudo -S apt update
+                    sudo -S apt install -y python3 python3-pip
                     pip3 install requests
                     pip3 install beautifulsoup4
                     pip3 install lxml
